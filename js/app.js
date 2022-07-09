@@ -1,3 +1,4 @@
+//This is a  array of object with 10 tweets, or, lenght ten
 let tweets = [
     {
         tweet: `Random text from Gabriel`,
@@ -61,6 +62,7 @@ let tweets = [
     },
 ]
 
+//this while loop is running into the array of tweets and looking for ages above 18 to print out the tweet, the username and the day that was created
 let counter = 0;
 while(counter < tweets.length) {
     if(tweets[counter][`age`] >= 18) {
@@ -69,6 +71,7 @@ while(counter < tweets.length) {
     counter++;
 }
 
+//this for loop is running into the array of tweets and looking for ages under 18 to print out the tweet, the username and the day that was created
 for(let counter = 0; counter < tweets.length; counter++) {
     if(tweets[counter][`age`] < 18) {
         console.log(`The tweet is ${tweets[counter][`tweet`]}. Wrote by ${tweets[counter][`username`]} and created at: ${tweets[counter][`created_at`]}`)
